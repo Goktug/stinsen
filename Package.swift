@@ -11,7 +11,9 @@ let package = Package(
             targets: ["Stinsen"]
         )
     ],
-    dependencies: [],
+    dependencies: [
+        .package(url: "https://github.com/Goktug/stinsen.git", .branch("feature/custom-tabbar") )
+    ],
     targets: [
         .target(
             name: "Stinsen",
